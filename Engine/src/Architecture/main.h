@@ -3,12 +3,16 @@
 #include "SDL/SDL_INIT.h"
 
 #include "Architecture/Application.h"
+#include "Logging/Console.h"
 
 extern Application* CreateApplication();
 
 void Initialize()
 {
-    SDL_INIT* sdl_init = new SDL_INIT();
+    Console::Init();
+    SDL_INIT sdl_init;
+
+    Console::GetEngineLogger().info("Engine initialized successfully.");
 }
 
 int main(int argc, char** argv)
@@ -18,6 +22,4 @@ int main(int argc, char** argv)
     Application* app = CreateApplication();
     app->Run();
     delete app;
-
-    return 0;
 }

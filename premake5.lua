@@ -1,4 +1,4 @@
-workspace "dev_main"
+workspace "GameEngines24-25"
     architecture "x64"
     configurations { "Debug" } -- add more as required
 
@@ -24,14 +24,16 @@ project "Engine"
         ["Header Files/Architecture"] = "%{prj.name}/src/Architecture/**.h",
         ["Source Files/SDL"] = "%{prj.name}/src/SDL/**.cpp",
         ["Header Files/SDL"] = "%{prj.name}/src/SDL/**.h",
+        ["Header Files/Logging"] = "%{prj.name}/src/Logging/**.cpp",
+        ["Header Files/Logging"] = "%{prj.name}/src/Logging/**.h",
         ["Source Files/*"] = "%{prj.name}/src/**.cpp",
         ["Header Files/*"] = "%{prj.name}/src/**.h"
     }
 
     includedirs {
         "%{prj.name}/src",
-        "Engine/dependencies/spdlog/include",
-        "Engine/dependencies/Glad/include",
+        "Engine/dependencies/bin/spdlog/include",
+        "Engine/dependencies/bin/Glad/include",
         "dependencies/bin/SDL/SDL2-2.30.6/include"
     }
 
@@ -84,7 +86,7 @@ project "Client"
     }
 
     includedirs {
-        "Engine/dependencies/spdlog/include",
+        "Engine/dependencies/bin/spdlog/include",
         "Engine/src",
         "dependencies/bin/SDL/SDL2-2.30.6/include"
     }

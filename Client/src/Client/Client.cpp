@@ -4,8 +4,6 @@
 class Client :public Application
 {
 public:
-
-
 	Client()
 	{
 
@@ -18,5 +16,8 @@ public:
 
 Application* CreateApplication()
 {
+	// Example log from client side
+	Console::GetClientLogger().info("Test");
+
 	return new Client();
 }
