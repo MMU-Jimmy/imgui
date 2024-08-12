@@ -1,0 +1,3 @@
+﻿cl : command line  warning D9025: overriding '/MTd' with '/MD'
+  Application.cpp
+  Engine.vcxproj -> C:\dev_main\bin\Debug-x86_64-windows\Engine\Engine.dll
