@@ -67,8 +67,8 @@
     <ClInclude Include="src\SDL\SDL_INIT.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Console.cpp" />
     <ClCompile Include="src\Architecture\Application.cpp" />
+    <ClCompile Include="src\Logging\Console.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="dependencies\bin\Glad\Glad.vcxproj">

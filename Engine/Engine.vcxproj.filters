@@ -33,7 +33,7 @@
     <ClCompile Include="src\Architecture\Application.cpp">
       <Filter>Architecture</Filter>
     </ClCompile>
-    <ClCompile Include="Console.cpp">
+    <ClCompile Include="src\Logging\Console.cpp">
       <Filter>Logging</Filter>
     </ClCompile>
   </ItemGroup>
