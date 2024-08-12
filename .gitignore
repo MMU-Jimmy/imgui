@@ -1,5 +1,2 @@
 # Ignore Visual Studio temporary files and folders
 .vs/
-
-# Ignore IntelliSense precompiled header files
-*.ipch
