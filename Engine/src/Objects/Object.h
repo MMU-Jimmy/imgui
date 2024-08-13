@@ -17,6 +17,7 @@ public:
 		for (auto c : components)
 			delete c;
 	}
+	void AddComponent(Component* comp);
 	void RemoveComponent(Component* comp);
 	void RemoveComponent(uint32_t index);
 
