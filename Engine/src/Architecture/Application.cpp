@@ -15,6 +15,9 @@ Application::Application()
 {
     m_Window = std::unique_ptr<Window>(Window::Create());
     m_Window->SetEventCallback(BIND_EVENT_FN(OnEvent));
+
+    // build the engine objects here (the runtime)
+    m_objects = new ObjectSystem(); // another philosophical point - are we ok using raw pointers? It's a PITA doing anything else, but maybe we could try.
 }
 
 Application::~Application() { }
@@ -32,6 +35,7 @@ void Application::Run()
 
     while (m_Running)
     {
+        m_objects->OnUpdate(TICKRATE / 1000.0f);
         m_Window->OnUpdate();
 
         Console::GetEngineLogger().info("Game loop");
