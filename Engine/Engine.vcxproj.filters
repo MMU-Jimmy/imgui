@@ -10,6 +10,9 @@
     <Filter Include="Logging">
       <UniqueIdentifier>{AC6878E8-1848-F783-2160-825A8DBE5DE5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{CF2649B1-3B06-C84C-441E-5323B07C2EAE}</UniqueIdentifier>
+    </Filter>
     <Filter Include="SDL">
       <UniqueIdentifier>{081D880B-7426-887C-FDA1-9E7C69AA937C}</UniqueIdentifier>
     </Filter>
@@ -52,6 +55,18 @@
     <ClInclude Include="src\Logging\Console.h">
       <Filter>Logging</Filter>
     </ClInclude>
+    <ClInclude Include="src\Objects\Component.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Object.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\ObjectSystem.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\ObjectUID.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
     <ClInclude Include="src\SDL\SDL_INIT.h">
       <Filter>SDL</Filter>
     </ClInclude>
@@ -74,6 +89,18 @@
     </ClCompile>
     <ClCompile Include="src\Logging\Console.cpp">
       <Filter>Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\Component.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\Object.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\ObjectSystem.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\ObjectUID.cpp">
+      <Filter>Objects</Filter>
     </ClCompile>
     <ClCompile Include="src\Window\Window.cpp">
       <Filter>Window</Filter>
