@@ -4,11 +4,17 @@
     <Filter Include="Architecture">
       <UniqueIdentifier>{282F98C7-1492-276C-BD17-6022A959F3EE}</UniqueIdentifier>
     </Filter>
+    <Filter Include="EventSystem">
+      <UniqueIdentifier>{CCE875DF-389E-EED4-C192-E8AB2D47E5D8}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Logging">
       <UniqueIdentifier>{AC6878E8-1848-F783-2160-825A8DBE5DE5}</UniqueIdentifier>
     </Filter>
     <Filter Include="SDL">
       <UniqueIdentifier>{081D880B-7426-887C-FDA1-9E7C69AA937C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Window">
+      <UniqueIdentifier>{3DEA79DA-298C-A4B0-1247-B804FE872B01}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -21,20 +27,50 @@
     <ClInclude Include="src\Architecture\main.h">
       <Filter>Architecture</Filter>
     </ClInclude>
-    <ClInclude Include="src\Libs.h" />
+    <ClInclude Include="src\EngineIncludes.h" />
+    <ClInclude Include="src\EventSystem\Event.h">
+      <Filter>EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EventSystem\EventApplication.h">
+      <Filter>EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EventSystem\EventHandler.h">
+      <Filter>EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EventSystem\EventKeyboard.h">
+      <Filter>EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EventSystem\EventMouse.h">
+      <Filter>EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EventSystem\EventSDL.h">
+      <Filter>EventSystem</Filter>
+    </ClInclude>
     <ClInclude Include="src\Logging\Console.h">
       <Filter>Logging</Filter>
     </ClInclude>
     <ClInclude Include="src\SDL\SDL_INIT.h">
       <Filter>SDL</Filter>
     </ClInclude>
+    <ClInclude Include="src\Window\Window.h">
+      <Filter>Window</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Architecture\Application.cpp">
       <Filter>Architecture</Filter>
     </ClCompile>
+    <ClCompile Include="src\EventSystem\EventHandler.cpp">
+      <Filter>EventSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EventSystem\EventSDL.cpp">
+      <Filter>EventSystem</Filter>
+    </ClCompile>
     <ClCompile Include="src\Logging\Console.cpp">
       <Filter>Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Window\Window.cpp">
+      <Filter>Window</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -10,5 +10,4 @@ public:
     static void Init();
 
     static spdlog::logger& GetEngineLogger();
-    static spdlog::logger& GetClientLogger();
 };

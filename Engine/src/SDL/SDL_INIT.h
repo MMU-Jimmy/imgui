@@ -18,10 +18,6 @@ public:
 
 			std::string sdl_init_err = "SDL Initialized: ";
 			std::cout << (s_SDLInitialized ? sdl_init_err + "Success" : sdl_init_err + "Fail");
-
-			// Initialize SDL with Glad below (ImGUI rendering)
-			// ..
-			// ..
 		}
 	}
 

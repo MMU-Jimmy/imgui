@@ -1,2 +1,5 @@
 C:\GameEngines24-25\Engine\src\Architecture\Application.cpp;C:\GameEngines24-25\obj\Debug-x86_64-windows\Engine\Application.obj
+C:\GameEngines24-25\Engine\src\EventSystem\EventHandler.cpp;C:\GameEngines24-25\obj\Debug-x86_64-windows\Engine\EventHandler.obj
+C:\GameEngines24-25\Engine\src\EventSystem\EventSDL.cpp;C:\GameEngines24-25\obj\Debug-x86_64-windows\Engine\EventSDL.obj
 C:\GameEngines24-25\Engine\src\Logging\Console.cpp;C:\GameEngines24-25\obj\Debug-x86_64-windows\Engine\Console.obj
+C:\GameEngines24-25\Engine\src\Window\Window.cpp;C:\GameEngines24-25\obj\Debug-x86_64-windows\Engine\Window.obj

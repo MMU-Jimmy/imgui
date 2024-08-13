@@ -8,7 +8,7 @@ include "Engine/dependencies/bin/Glad"
 
 project "Engine"
     location "Engine"
-    kind "SharedLib"
+    kind "SharedLib"  -- The Engine project remains a shared library (DLL)
     language "C++"
 
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
@@ -20,12 +20,6 @@ project "Engine"
     }
 
     vpaths {
-        ["Source Files/Architecture"] = "%{prj.name}/src/Architecture/**.cpp",
-        ["Header Files/Architecture"] = "%{prj.name}/src/Architecture/**.h",
-        ["Source Files/SDL"] = "%{prj.name}/src/SDL/**.cpp",
-        ["Header Files/SDL"] = "%{prj.name}/src/SDL/**.h",
-        ["Header Files/Logging"] = "%{prj.name}/src/Logging/**.cpp",
-        ["Header Files/Logging"] = "%{prj.name}/src/Logging/**.h",
         ["Source Files/*"] = "%{prj.name}/src/**.cpp",
         ["Header Files/*"] = "%{prj.name}/src/**.h"
     }
@@ -52,7 +46,7 @@ project "Engine"
         systemversion "latest"
 
         defines {
-            "ENGINE_PLATFORM_WINDOWS",
+            "ENGINE_EXPORTS",
             "ENGINE_BUILD_DLL"
         }
 
@@ -79,8 +73,6 @@ project "Client"
     }
 
     vpaths {
-        ["Source Files/Client"] = "%{prj.name}/src/Client/**.cpp",
-        ["Header Files/Client"] = "%{prj.name}/src/Client/**.h",
         ["Source Files/*"] = "%{prj.name}/src/**.cpp",
         ["Header Files/*"] = "%{prj.name}/src/**.h"
     }
@@ -107,7 +99,7 @@ project "Client"
         systemversion "latest"
 
         defines {
-            "ENGINE_PLATFORM_WINDOWS"
+            "ENGINE_EXPORTS"
         }
 
     filter "configurations:Debug"

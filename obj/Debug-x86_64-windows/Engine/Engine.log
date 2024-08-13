@@ -1,3 +1,37 @@
 ﻿cl : command line  warning D9025: overriding '/MTd' with '/MD'
+  Application.cpp
+C:\GameEngines24-25\Engine\src\Window\Window.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'src/Architecture/Application.cpp')
+  
+C:\GameEngines24-25\Engine\src\Architecture\Application.h(20,29): warning C4251: 'Application::m_Window': class 'std::unique_ptr<Window,std::default_delete<Window>>' needs to have dll-interface to be used by clients of class 'Application'
+  (compiling source file 'src/Architecture/Application.cpp')
+  C:\GameEngines24-25\Engine\src\Architecture\Application.h(20,10):
+  see declaration of 'std::unique_ptr<Window,std::default_delete<Window>>'
+  
+  EventHandler.cpp
+C:\GameEngines24-25\Engine\src\Window\Window.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'src/EventSystem/EventHandler.cpp')
+  
+C:\GameEngines24-25\Engine\src\Architecture\Application.h(20,29): warning C4251: 'Application::m_Window': class 'std::unique_ptr<Window,std::default_delete<Window>>' needs to have dll-interface to be used by clients of class 'Application'
+  (compiling source file 'src/EventSystem/EventHandler.cpp')
+  C:\GameEngines24-25\Engine\src\Architecture\Application.h(20,10):
+  see declaration of 'std::unique_ptr<Window,std::default_delete<Window>>'
+  
+  EventSDL.cpp
+C:\GameEngines24-25\Engine\src\Window\Window.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'src/EventSystem/EventSDL.cpp')
+  
+C:\GameEngines24-25\Engine\src\EventSystem\EventSDL.cpp(16,62): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\GameEngines24-25\Engine\src\EventSystem\EventSDL.cpp(16,42): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   Console.cpp
+  Window.cpp
+C:\GameEngines24-25\Engine\src\Window\Window.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'src/Window/Window.cpp')
+  
+C:\GameEngines24-25\Engine\src\Architecture\Application.h(20,29): warning C4251: 'Application::m_Window': class 'std::unique_ptr<Window,std::default_delete<Window>>' needs to have dll-interface to be used by clients of class 'Application'
+  (compiling source file 'src/Window/Window.cpp')
+  C:\GameEngines24-25\Engine\src\Architecture\Application.h(20,10):
+  see declaration of 'std::unique_ptr<Window,std::default_delete<Window>>'
+  
+  Generating Code...
   Engine.vcxproj -> C:\GameEngines24-25\bin\Debug-x86_64-windows\Engine\Engine.dll

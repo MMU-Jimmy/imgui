@@ -1,5 +1,4 @@
-#pragma once
-#include <Libs.h>
+#include <EngineIncludes.h>
 
 class Client :public Application
 {
@@ -16,8 +15,7 @@ public:
 
 Application* CreateApplication()
 {
-	// Example log from client side
-	Console::GetClientLogger().info("Test");
+	Console::GetEngineLogger().info("Application Created.");
 
 	return new Client();
 }

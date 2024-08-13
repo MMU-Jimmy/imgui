@@ -38,7 +38,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>ENGINE_PLATFORM_WINDOWS;ENGINE_BUILD_DLL;ENGINE_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ENGINE_EXPORTS;ENGINE_BUILD_DLL;ENGINE_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;dependencies\bin\spdlog\include;dependencies\bin\Glad\include;..\dependencies\bin\SDL\SDL2-2.30.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
@@ -62,13 +62,23 @@
     <ClInclude Include="src\Architecture\Application.h" />
     <ClInclude Include="src\Architecture\Macros.h" />
     <ClInclude Include="src\Architecture\main.h" />
-    <ClInclude Include="src\Libs.h" />
+    <ClInclude Include="src\EngineIncludes.h" />
+    <ClInclude Include="src\EventSystem\Event.h" />
+    <ClInclude Include="src\EventSystem\EventApplication.h" />
+    <ClInclude Include="src\EventSystem\EventHandler.h" />
+    <ClInclude Include="src\EventSystem\EventKeyboard.h" />
+    <ClInclude Include="src\EventSystem\EventMouse.h" />
+    <ClInclude Include="src\EventSystem\EventSDL.h" />
     <ClInclude Include="src\Logging\Console.h" />
     <ClInclude Include="src\SDL\SDL_INIT.h" />
+    <ClInclude Include="src\Window\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Architecture\Application.cpp" />
+    <ClCompile Include="src\EventSystem\EventHandler.cpp" />
+    <ClCompile Include="src\EventSystem\EventSDL.cpp" />
     <ClCompile Include="src\Logging\Console.cpp" />
+    <ClCompile Include="src\Window\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="dependencies\bin\Glad\Glad.vcxproj">
