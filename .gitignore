@@ -25,7 +25,7 @@ ipch/
 *.aps
 *.pch
 
-# Ignore all bin directories
+# Ignore all dependency directories
 dependencies/
 
 # Exclude .idb (Intermediate Debug) files
