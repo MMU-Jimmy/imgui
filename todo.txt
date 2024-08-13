@@ -1,0 +1,14 @@
+.. to do:
+ 
+Jimmy:
+	- Architecture
+		- Layer stack
+	- Editor (ImGUI)
+		- Documentation required - undo feature.
+	- Input polling
+ 
+Huw:
+	- Graphics
+	- Physics (Box2D)
+	- Audio
+	- Scripting (Lua)
