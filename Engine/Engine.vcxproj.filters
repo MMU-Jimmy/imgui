@@ -16,6 +16,9 @@
     <Filter Include="Window">
       <UniqueIdentifier>{3DEA79DA-298C-A4B0-1247-B804FE872B01}</UniqueIdentifier>
     </Filter>
+    <Filter Include="third-partty">
+      <UniqueIdentifier>{11F5631A-FD57-F3BE-A6DD-2B75921FBF41}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Architecture\Application.h">
@@ -54,6 +57,9 @@
     </ClInclude>
     <ClInclude Include="src\Window\Window.h">
       <Filter>Window</Filter>
+    </ClInclude>
+    <ClInclude Include="src\third-partty\fmt_extensions.h">
+      <Filter>third-partty</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

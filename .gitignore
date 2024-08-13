@@ -1,2 +1,38 @@
-# Ignore Visual Studio temporary files and folders
+# Ignore Visual Studio specific files
 .vs/
+*.vcxproj.user
+*.suo
+
+# Build outputs
+Debug/
+Release/
+x64/
+x86/
+*.o
+*.obj
+*.pdb
+*.ilk
+*.exe
+*.dll
+*.lib
+
+# Temporary files
+*.tlog
+*.log
+*.lastbuildstate
+*.cache
+ipch/
+*.aps
+*.pch
+
+# Exclude all .sdf (SQL Server Compact Edition) files
+*.sdf
+
+# Exclude .idb (Intermediate Debug) files
+*.idb
+
+# Build Results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
