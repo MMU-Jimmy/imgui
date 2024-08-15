@@ -24,4 +24,13 @@ public:
 
 	uint32_t GetNumComponents() const { return components.size(); }
 	Component* GetComponent(uint32_t index) const { return components[index]; }
+	template<class T> Component* GetComponentOfType() const
+	{
+		for (auto c : components)
+		{
+			if (dynamic_cast<T>(c) != nullptr)
+				return c;
+		}
+		return nullptr;
+	}
 };

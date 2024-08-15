@@ -1,5 +1,5 @@
 #include "Object.h"
-#include "Component.h"
+#include "../Components/Component.h"
 
 void Object::AddComponent(Component* comp)
 {

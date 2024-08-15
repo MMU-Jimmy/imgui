@@ -62,6 +62,8 @@
     <ClInclude Include="src\Architecture\Application.h" />
     <ClInclude Include="src\Architecture\Macros.h" />
     <ClInclude Include="src\Architecture\main.h" />
+    <ClInclude Include="src\Components\Component.h" />
+    <ClInclude Include="src\Components\TransformComponent.h" />
     <ClInclude Include="src\EngineIncludes.h" />
     <ClInclude Include="src\EventSystem\Event.h" />
     <ClInclude Include="src\EventSystem\EventApplication.h" />
@@ -70,23 +72,22 @@
     <ClInclude Include="src\EventSystem\EventMouse.h" />
     <ClInclude Include="src\EventSystem\EventSDL.h" />
     <ClInclude Include="src\Logging\Console.h" />
-    <ClInclude Include="src\Objects\Component.h" />
     <ClInclude Include="src\Objects\Object.h" />
-    <ClInclude Include="src\Objects\ObjectSystem.h" />
     <ClInclude Include="src\Objects\ObjectUID.h" />
+    <ClInclude Include="src\Objects\Scene.h" />
     <ClInclude Include="src\SDL\SDL_INIT.h" />
     <ClInclude Include="src\Window\Window.h" />
     <ClInclude Include="src\third-partty\fmt_extensions.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Architecture\Application.cpp" />
+    <ClCompile Include="src\Components\Component.cpp" />
     <ClCompile Include="src\EventSystem\EventHandler.cpp" />
     <ClCompile Include="src\EventSystem\EventSDL.cpp" />
     <ClCompile Include="src\Logging\Console.cpp" />
-    <ClCompile Include="src\Objects\Component.cpp" />
     <ClCompile Include="src\Objects\Object.cpp" />
-    <ClCompile Include="src\Objects\ObjectSystem.cpp" />
     <ClCompile Include="src\Objects\ObjectUID.cpp" />
+    <ClCompile Include="src\Objects\Scene.cpp" />
     <ClCompile Include="src\Window\Window.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -3,7 +3,7 @@
 #include <string>
 #include <cinttypes>
 
-#include "ObjectUID.h"
+#include "../Objects/ObjectUID.h"
 using namespace std;
 
 class Component
@@ -12,7 +12,7 @@ class Component
 	string type;
 	uint32_t uid;
 public:
-	Component() : type("default"), uid(ObjectUID::UID()) {}
+	Component(string type) : type(type), uid(ObjectUID::UID()) {}
 	virtual ~Component(); 
 
 	string GetType() const { return type; }
@@ -20,5 +20,4 @@ public:
 	virtual void OnStart() = 0;
 	virtual void OnUpdate(float deltaTime) = 0;
 	virtual void OnRender() = 0;
-
 };

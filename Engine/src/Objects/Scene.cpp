@@ -1,11 +1,11 @@
-#include "ObjectSystem.h"
+#include "Scene.h"
 
-void ObjectSystem::AddObject(Object* obj)
+void Scene::AddObject(Object* obj)
 {
 	objectList.push_back(obj);
 }
 
-void ObjectSystem::RemoveObject(Object* obj)
+void Scene::RemoveObject(Object* obj)
 {
 	auto it = objectList.begin();
 	while (it != objectList.end())
@@ -20,12 +20,12 @@ void ObjectSystem::RemoveObject(Object* obj)
 	delete obj;
 
 }
-void ObjectSystem::RemoveObject(uint32_t index)
+void Scene::RemoveObject(uint32_t index)
 {
 	objectList.erase(objectList.begin() + index);
 }
 
-void ObjectSystem::OnUpdate(float deltaTime)
+void Scene::OnUpdate(float deltaTime)
 {
 	for (auto o : objectList)
 	{

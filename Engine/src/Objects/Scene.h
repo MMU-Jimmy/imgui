@@ -1,13 +1,13 @@
 #pragma once
 
 #include "Object.h"
-#include "Component.h"
+#include "../Components/Component.h"
 #include <vector>
 #include <cinttypes>
 
 using namespace std;
 
-class ObjectSystem
+class Scene
 {
 	vector<Object*> objectList;
 public:

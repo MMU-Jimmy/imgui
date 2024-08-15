@@ -4,7 +4,7 @@
 #include "EventSystem/Event.h"
 #include "EventSystem/EventApplication.h"
 #include "EventSystem/EventMouse.h"
-#include "Objects/ObjectSystem.h"
+#include "Objects/Scene.h"
 
 class ENGINE_API Application
 {
@@ -28,7 +28,7 @@ private:
 
     // is this where we put the 'engine'? i.e. top level objects for each of the systems (objects, physics, scripting etc).
     // or should we have a separate Engine object?
-    ObjectSystem* m_objects;
+    Scene* m_objects;
 };
 
 // Implementation @ Project:Client -> Client.cpp
