@@ -4,11 +4,12 @@
 #include "EventSystem/Event.h"
 #include "EventSystem/EventApplication.h"
 #include "EventSystem/EventMouse.h"
+#include "Objects/Scene.h"
 
 class ENGINE_API Application
 {
 public:
-    long const TICKRATE = 100;
+    long const TICKRATE = 100; // 10 fps?  
 
     Application();
     virtual ~Application();
@@ -24,6 +25,10 @@ private:
     bool OnWindowClose(Event_WindowClose& e);
     bool OnMouseMove(Event_MouseMoved& e);
     // ..
+
+    // is this where we put the 'engine'? i.e. top level objects for each of the systems (objects, physics, scripting etc).
+    // or should we have a separate Engine object?
+    Scene* m_objects;
 };
 
 // Implementation @ Project:Client -> Client.cpp

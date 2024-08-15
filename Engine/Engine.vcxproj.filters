@@ -4,11 +4,17 @@
     <Filter Include="Architecture">
       <UniqueIdentifier>{282F98C7-1492-276C-BD17-6022A959F3EE}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{6B7DD516-5735-1764-C03C-F0BFAC13B254}</UniqueIdentifier>
+    </Filter>
     <Filter Include="EventSystem">
       <UniqueIdentifier>{CCE875DF-389E-EED4-C192-E8AB2D47E5D8}</UniqueIdentifier>
     </Filter>
     <Filter Include="Logging">
       <UniqueIdentifier>{AC6878E8-1848-F783-2160-825A8DBE5DE5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{CF2649B1-3B06-C84C-441E-5323B07C2EAE}</UniqueIdentifier>
     </Filter>
     <Filter Include="SDL">
       <UniqueIdentifier>{081D880B-7426-887C-FDA1-9E7C69AA937C}</UniqueIdentifier>
@@ -29,6 +35,12 @@
     </ClInclude>
     <ClInclude Include="src\Architecture\main.h">
       <Filter>Architecture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\Component.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\TransformComponent.h">
+      <Filter>Components</Filter>
     </ClInclude>
     <ClInclude Include="src\EngineIncludes.h" />
     <ClInclude Include="src\EventSystem\Event.h">
@@ -52,6 +64,15 @@
     <ClInclude Include="src\Logging\Console.h">
       <Filter>Logging</Filter>
     </ClInclude>
+    <ClInclude Include="src\Objects\Object.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\ObjectUID.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Scene.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
     <ClInclude Include="src\SDL\SDL_INIT.h">
       <Filter>SDL</Filter>
     </ClInclude>
@@ -66,6 +87,9 @@
     <ClCompile Include="src\Architecture\Application.cpp">
       <Filter>Architecture</Filter>
     </ClCompile>
+    <ClCompile Include="src\Components\Component.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
     <ClCompile Include="src\EventSystem\EventHandler.cpp">
       <Filter>EventSystem</Filter>
     </ClCompile>
@@ -74,6 +98,15 @@
     </ClCompile>
     <ClCompile Include="src\Logging\Console.cpp">
       <Filter>Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\Object.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\ObjectUID.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\Scene.cpp">
+      <Filter>Objects</Filter>
     </ClCompile>
     <ClCompile Include="src\Window\Window.cpp">
       <Filter>Window</Filter>
