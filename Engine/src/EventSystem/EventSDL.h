@@ -4,11 +4,15 @@
 #include "Window/Window.h"
 #include "SDL.h"
 
-class EventSDL
+namespace IonixEngine
 {
-public:
-    EventSDL() { }
-    ~EventSDL() { }
+    class EventSDL
+    {
+    public:
+        EventSDL() { }
+        ~EventSDL() { }
 
-    void PollEventsSDL(SDL_Event e, Window::WindowData& windowData);
-};
+        void PollEventsSDL(SDL_Event e, Window::WindowData& windowData);
+    };
+}
+

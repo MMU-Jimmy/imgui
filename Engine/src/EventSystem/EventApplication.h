@@ -3,27 +3,30 @@
 #include <sstream>
 #include "EventSystem/Event.h"
 
-class Event_WindowClose : public Event
+namespace IonixEngine
 {
-public:
-    Event_WindowClose() {}
-
-    EVENT_CLASS_TYPE(WindowClose)
-
-    virtual const char* GetInfo() const override
+    class Event_WindowClose : public Event
     {
-        return "WindowCloseEvent";
-    }
-};
+    public:
+        Event_WindowClose() {}
 
-class Event_Tick : public Event
-{
-public:
-    EVENT_CLASS_TYPE(Tick)
-    Event_Tick() {}
+        EVENT_CLASS_TYPE(WindowClose)
 
-    virtual const char* GetInfo() const override
+        virtual const char* GetInfo() const override
+        {
+            return "WindowCloseEvent";
+        }
+    };
+
+    class Event_Tick : public Event
     {
-        return "TickEvent";
-    }
-};
+    public:
+        EVENT_CLASS_TYPE(Tick)
+        Event_Tick() {}
+
+        virtual const char* GetInfo() const override
+        {
+            return "TickEvent";
+        }
+    };
+}

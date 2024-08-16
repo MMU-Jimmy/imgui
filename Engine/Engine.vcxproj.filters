@@ -10,6 +10,12 @@
     <Filter Include="EventSystem">
       <UniqueIdentifier>{CCE875DF-389E-EED4-C192-E8AB2D47E5D8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="LayerSystem">
+      <UniqueIdentifier>{87D49461-F389-0D57-7C7E-072EE832045B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LayerSystem\Layers">
+      <UniqueIdentifier>{662D6E48-5211-2F9E-BB71-29F1A7741920}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Logging">
       <UniqueIdentifier>{AC6878E8-1848-F783-2160-825A8DBE5DE5}</UniqueIdentifier>
     </Filter>
@@ -61,6 +67,15 @@
     <ClInclude Include="src\EventSystem\EventSDL.h">
       <Filter>EventSystem</Filter>
     </ClInclude>
+    <ClInclude Include="src\LayerSystem\Layer.h">
+      <Filter>LayerSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LayerSystem\LayerStack.h">
+      <Filter>LayerSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LayerSystem\Layers\LayerImGui.h">
+      <Filter>LayerSystem\Layers</Filter>
+    </ClInclude>
     <ClInclude Include="src\Logging\Console.h">
       <Filter>Logging</Filter>
     </ClInclude>
@@ -82,6 +97,9 @@
     <ClInclude Include="src\third-partty\fmt_extensions.h">
       <Filter>third-partty</Filter>
     </ClInclude>
+    <ClInclude Include="src\LayerSystem\Layers\LayerExample.h">
+      <Filter>LayerSystem\Layers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Architecture\Application.cpp">
@@ -95,6 +113,15 @@
     </ClCompile>
     <ClCompile Include="src\EventSystem\EventSDL.cpp">
       <Filter>EventSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LayerSystem\Layer.cpp">
+      <Filter>LayerSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LayerSystem\LayerStack.cpp">
+      <Filter>LayerSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LayerSystem\Layers\LayerImGui.cpp">
+      <Filter>LayerSystem\Layers</Filter>
     </ClCompile>
     <ClCompile Include="src\Logging\Console.cpp">
       <Filter>Logging</Filter>
@@ -110,6 +137,9 @@
     </ClCompile>
     <ClCompile Include="src\Window\Window.cpp">
       <Filter>Window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LayerSystem\Layers\LayerExample.cpp">
+      <Filter>LayerSystem\Layers</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

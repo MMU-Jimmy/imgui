@@ -4,10 +4,13 @@
 #include <spdlog/spdlog.h>
 #include <spdlog/sinks/stdout_color_sinks.h>
 
-class ENGINE_API Console
+namespace IonixEngine
 {
-public:
-    static void Init();
+    class ENGINE_API Console
+    {
+    public:
+        static void Init();
 
-    static spdlog::logger& GetEngineLogger();
-};
+        static spdlog::logger& GetEngineLogger();
+    };
+}

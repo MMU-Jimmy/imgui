@@ -13,10 +13,10 @@ class Component
 	uint32_t uid;
 public:
 	Component(string type) : type(type), uid(ObjectUID::UID()) {}
-	virtual ~Component(); 
+	virtual ~Component();
 
 	string GetType() const { return type; }
-	
+
 	virtual void OnStart() = 0;
 	virtual void OnUpdate(float deltaTime) = 0;
 	virtual void OnRender() = 0;

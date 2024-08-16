@@ -1,11 +1,16 @@
 #pragma once
+using namespace IonixEngine;
+
 #define SDL_MAIN_HANDLED
 #include "SDL/SDL_INIT.h"
 
 #include "Architecture/Application.h"
 #include "Logging/Console.h"
 
-extern Application* CreateApplication();
+namespace ClientApp
+{
+    extern IonixEngine::Application* CreateApplication();
+}
 
 void Initialize()
 {
@@ -19,7 +24,9 @@ int main(int argc, char** argv)
 {
     Initialize();
 
-    Application* app = CreateApplication();
+    auto app = ClientApp::CreateApplication();
     app->Run();
     delete app;
+
+    return 0;
 }

@@ -71,6 +71,10 @@
     <ClInclude Include="src\EventSystem\EventKeyboard.h" />
     <ClInclude Include="src\EventSystem\EventMouse.h" />
     <ClInclude Include="src\EventSystem\EventSDL.h" />
+    <ClInclude Include="src\LayerSystem\Layer.h" />
+    <ClInclude Include="src\LayerSystem\LayerStack.h" />
+    <ClInclude Include="src\LayerSystem\Layers\LayerExample.h" />
+    <ClInclude Include="src\LayerSystem\Layers\LayerImGui.h" />
     <ClInclude Include="src\Logging\Console.h" />
     <ClInclude Include="src\Objects\Object.h" />
     <ClInclude Include="src\Objects\ObjectUID.h" />
@@ -84,6 +88,10 @@
     <ClCompile Include="src\Components\Component.cpp" />
     <ClCompile Include="src\EventSystem\EventHandler.cpp" />
     <ClCompile Include="src\EventSystem\EventSDL.cpp" />
+    <ClCompile Include="src\LayerSystem\Layer.cpp" />
+    <ClCompile Include="src\LayerSystem\LayerStack.cpp" />
+    <ClCompile Include="src\LayerSystem\Layers\LayerExample.cpp" />
+    <ClCompile Include="src\LayerSystem\Layers\LayerImGui.cpp" />
     <ClCompile Include="src\Logging\Console.cpp" />
     <ClCompile Include="src\Objects\Object.cpp" />
     <ClCompile Include="src\Objects\ObjectUID.cpp" />

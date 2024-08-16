@@ -1,21 +1,25 @@
 #include <EngineIncludes.h>
 
-class Client :public Application
+namespace ClientApp
 {
-public:
-	Client()
+	class Client :public IonixEngine::Application
 	{
+	public:
+		Client()
+		{
 
-	}
-	~Client()
+		}
+		~Client()
+		{
+
+		}
+	};
+
+	IonixEngine::Application* CreateApplication()
 	{
+		Console::GetEngineLogger().info("Application Created.");
 
+		return new Client();
 	}
-};
-
-Application* CreateApplication()
-{
-	Console::GetEngineLogger().info("Application Created.");
-
-	return new Client();
 }
+
